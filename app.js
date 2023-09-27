@@ -7,7 +7,7 @@ const app = express()
 
 app.use(cookieparser())
 app.use(cors())
-dotenv.config({ path: "./config.env" });
+dotenv.env({ path: "./.env" });
 
 require('./mongo.js')
 
